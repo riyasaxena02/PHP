@@ -27,20 +27,23 @@
   <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
       
   </head>
-    <body>
+    <body onload='document.appointment.email.focus()'>
       <div class="centered">
         <h3>Appointment</h3>
         <div class="f3"> 
-        <form>
+        <form name="appointment">
           <label for="date">Date:</label><br>
           <input type="date" id="date" name="date"> <br>
           <label for="email">Email:</label><br>
-          <input type="email" id="email" name="email"><br>
+          <input type="text" id="email" name="email"><br>
           <br>
-          <input class="btn" type="submit" value="Submit">
+          <input class="btn" type="submit" value="Submit" onclick="ValidateEmail(document.appointment.email)">
           <input class="btn" type="reset" value="Clear">
         </form>
           <a href="../PHP/index.html"><button  class="btn" type="submit" >Home</button></a> 
         </div>
       </div>
+      <script src="../PHP/JS/validate.js"></script>
     </body>
+    </html>
+    

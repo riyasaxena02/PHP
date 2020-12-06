@@ -27,24 +27,26 @@
   <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
       
   </head>
-    <body>
+    <body onload='document.call.to.focus()'>
       <div class="centered">
         <h3>Call</h3>
         <div class="f2"> 
-        <form>
+        <form name="form1" onsubmit="ValidatePhone(document.form1.from)>
           <label for="to">To:</label><br>
-          <input type="number" id="to" name="to"><br>
+          <input type="text" id="to" name="to"><br>
           <label for="from">From:</label><br>
-          <input type="number" id="from" name="from"><br>
+          <input type="text" id="from" name="from"><br>
           <label for="date">Date:</label><br>
           <input type="date" id="date" name="date"> <br>
-          <label for="duration">Duration:</label><br>
+          <label for="duration">Duration:(in minutes)</label><br>
           <input type="number" id="duration" name="duration"><br>
           <br>
-          <input class="btn" type="submit" value="Submit">
+          <input class="btn" type="submit" value="Submit" onclick="ValidatePhone(document.form1.to,document.form1.from)">
           <input class="btn" type="reset" value="Clear">
         </form>
           <a href="../PHP/index.html"><button  class="btn" type="submit" >Home</button></a>
         </div>
       </div>
+      <script src="../PHP/JS/validate.js"></script>
     </body>
+    </html>

@@ -307,7 +307,7 @@ form {
 	width: 46px;
 	height: 46px;
 	text-align: center;
-	background: #262626;
+	background: #000000;
 	color: #fff;
 	text-decoration: none;
 	border-radius: 50%;
@@ -343,4 +343,33 @@ form {
 	color: #fff;
 	box-shadow: 0 0 15px #fff;
 	text-shadow: 0 0 15px #fff;
+}
+li {
+	list-style-type: none;
+	font-size: 16pt;
+}
+.mail {
+	margin: auto;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	width: 400px;
+	background: #d8f1f8;
+	border: 1px soild silver;
+}
+.mail h2 {
+	margin-left: 38px;
+}
+input {
+	font-size: 20pt;
+}
+input:focus,
+textarea:focus {
+	background-color: lightyellow;
+}
+input submit {
+	font-size: 12pt;
+}
+.rq {
+	color: #ff0000;
+	font-size: 10pt;
 }
