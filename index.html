@@ -3,15 +3,13 @@
   <meta charset="utf-8">
   <title>Riya's PHP Demo</title>
 <!--    font-->
-  <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@700&family=Poppins&family=Ubuntu+Mono:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@700&family=Poppins&family=Ubuntu+Mono:wght@700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700&display=swap" rel="stylesheet">
-    
-    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700&display=swap" rel="stylesheet">
-    
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-    
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
 <!--    css-->
-<link rel="stylesheet" href="C:\Users\Sanidhya\Desktop\PHP\CSS\main.css">
+<link rel="stylesheet" href="../PHP/CSS/styleslab.css">
+<link rel="stylesheet" href="../PHP/CSS/main.css">
   
  <!-- jquery -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -19,6 +17,7 @@
 <!--    font awesome-->
    <!-- <script src="https://use.fontawesome.com/releases/v5.13.0/js/all.js"></script>  -->
    <script src="https://kit.fontawesome.com/a076d05399.js"></script> 
+   <!-- <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script> -->
     
 <!--   bootstrap-->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
@@ -30,34 +29,30 @@
 
 <body>
     <main>
-        <div class="centered">
-     <h4>Heres the Input data!</h4> 
-    <hr>
-        <form class="product-form" method="post" action=main.php>
-            Name: <input type="text" name="name">
-            <span class="error">* <?php echo $nameErr;?></span>
-            <br><br>
-            E-mail:
-            <input type="text" name="email">
-            <span class="error">* <?php echo $emailErr;?></span>
-            <br><br>
-            Website:
-            <input type="text" name="website">
-            <span class="error"><?php echo $websiteErr;?></span>
-            <br><br>
-            Comment: <textarea name="comment" rows="5" cols="40"></textarea>
-            <br><br>
-            Gender:
-            <input type="radio" name="gender" value="female">Female
-            <input type="radio" name="gender" value="male">Male
-            <input type="radio" name="gender" value="other">Other
-            <span class="error">* <?php echo $genderErr;?></span>
-            <br><br>
-            <button class="btn" type="submit" name="submit" value="Submit">Submit</button>
-            
-            </form>            
-        <hr>
-    </div>
+        <div class="centered"> 
+            <h1> Hello</h1> 
+                 <h3> This is a test site for the task </h3>
+                 <br>
+                 </div>
+          <div class="container">
+            <div class="row">  
+                <div class="col-lg-2"></div>
+                <div class="col-lg-3">
+                    <div class="feature">
+                        <a href="t1.html"><button  type="submit" class="btn btn-outline-info btn-lg but"><i class="fas fa-envelope-square"></i> Trigger 1</button></a>      
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="feature">
+                        <a href="t2.html"><button  type="submit" class="btn btn-outline-info btn-lg but"> <i class="fas fa-phone-square"></i>  Trigger 2</button></a>      
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="feature">
+                        <a href="t3.html"><button  type="submit" class="btn btn-outline-info btn-lg but"> <i class="fas fa-at"></i> Trigger 3 </button></a>      
+                    </div>
+                </div>
+            </div>    
         <div class="centered">
             <h5>Disclaimer : This is a trial website.</h5>
         </div>
@@ -70,7 +65,7 @@
         <div class="col-lg-3">
             <div class="devcard">
                 <div class="devcard-front">
-                    <img src="C:\Users\Sanidhya\Desktop\PHP\images\Riya.jpg">
+                    <img src="../PHP/images/Riya.jpg">
                 </div>
                 <div class="devcard-back">
                     <div class="devcard-back__details">

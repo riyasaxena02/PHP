@@ -1,15 +1,39 @@
 <?php
-$servername = "remotemysql.com";
-$username = "iphAyU6EV1";
-$password = "lRUE1PT2Ks";
-$dbName = "codexworld";
+$client = new MongoDB\Client(
+  'mongodb+srv://Riya:MongoPHP@cluster0.599yk.mongodb.net/saas?retryWrites=true&w=majority');
 
-// Create connection
-$conn = new mysqli($servername, $username, $password, $dbName);
+$db = $client->saas;
+$collection = $db->message;
 
-// Check connection
-if ($conn->connect_error) {
-  die("Connection failed: " . $conn->connect_error);
+$fromErr = $toErr = $dateErr = "";
+$from = $to = $date = "";
+
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+  if (empty($_POST["from"])) {
+    $fromErr = "From number is required";
+  } else {
+    $from = test_input($_POST["from"]);
+  }
+
+  if (empty($_POST["to"])) {
+    $toErr = "To number is required";
+  } else {
+    $to = test_input($_POST["to"]);
+  }
+
+  if (empty($_POST["date"])) {
+    $dateErr = "Date is required";
+  } else {
+    $date = test_input($_POST["date"]);
+  }
 }
-echo "Connected successfully";
+
+$document = array( 
+  "from" => '$from', 
+  "to" => '$to', 
+  "date" => '$date'
+);
+
+$collection->insert($document);
+echo "Document inserted successfully";
 ?>
