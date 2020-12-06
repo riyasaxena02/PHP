@@ -224,18 +224,29 @@ form {
 	transform: rotateX(0deg);
 	transition: 0.5s;
 }
-.devcard:hover .devcard-front:before {
+.devcard .devcard-front:before {
 	content: "";
 	position: absolute;
 	top: 0;
-	left: -50%;
-	width: 100%;
+	right: +50%;
+	width: 50%;
 	height: 100%;
-	background: #da9ff9;
+	background: rgba(228, 144, 253, 0.7);
 }
 
 .devcard:hover .devcard-front {
 	transform: rotateX(-180deg);
+}
+
+.devcard .devcard-front .devcard-front__details {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	left: 0;
+	width: 100%;
+	text-align: center;
+	padding: 20px;
+	box-sizing: border-box;
 }
 
 .devcard .devcard-back {
@@ -254,10 +265,10 @@ form {
 	content: "";
 	position: absolute;
 	top: 0;
-	left: -50%;
-	width: 100%;
+	right: +50%;
+	width: 50%;
 	height: 100%;
-	background: #da9ff9;
+	background: rgba(228, 144, 253, 0.7);
 }
 
 .devcard:hover .devcard-back {
