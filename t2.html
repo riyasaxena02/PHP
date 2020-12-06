@@ -31,7 +31,7 @@
       <div class="centered">
         <h3>Call</h3>
         <div class="f2"> 
-        <form name="form1" onsubmit="ValidatePhone(document.form1.from)>
+        <form name="form1"  action="call.php" method="POST">
           <label for="to">To:</label><br>
           <input type="text" id="to" name="to"><br>
           <label for="from">From:</label><br>
@@ -39,9 +39,9 @@
           <label for="date">Date:</label><br>
           <input type="date" id="date" name="date"> <br>
           <label for="duration">Duration:(in minutes)</label><br>
-          <input type="number" id="duration" name="duration"><br>
+          <input type="number" id="duration" name="duration" value="1"><br>
           <br>
-          <input class="btn" type="submit" value="Submit" onclick="ValidatePhone(document.form1.to,document.form1.from)">
+          <input class="btn" type="submit" name="submit" value="Submit" onclick="ValidatePhone(document.form1.to,document.form1.from)">
           <input class="btn" type="reset" value="Clear">
         </form>
           <a href="../PHP/index.html"><button  class="btn" type="submit" >Home</button></a>

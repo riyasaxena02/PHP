@@ -18,7 +18,7 @@
 <!--    font awesome-->
    <!-- <script src="https://use.fontawesome.com/releases/v5.13.0/js/all.js"></script>  -->
    <script src="https://kit.fontawesome.com/a076d05399.js"></script> 
-   <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+   <!-- <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script> -->
     
 <!--   bootstrap-->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
@@ -27,24 +27,12 @@
 <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
     
 </head>
-<body onload='document.message.to.focus()'>
-  <div class="centered">
-    <h3>Message</h3>
-    <div class="f2"> 
-      <form name="form1" action="message.php" method="POST">
-        <label for="to">To:</label><br>
-        <input type="text" id="to" name="to"><br>
-        <label for="from">From:</label><br>
-        <input type="text" id="from" name="from"><br>
-        <label for="date">Date:</label><br>
-        <input type="date" id="date" name="date"> <br>
-        <br>
-        <input class="btn" type="submit" name="submit" value="Submit" onclick="ValidatePhone(document.form1.to,document.form1.from)">
-        <input class="btn" type="reset" value="Clear">
-      </form>
-      <a href="../PHP/index.html"><button  class="btn" type="submit" >Home</button></a>
-      </div>
-  </div>
-  <script src="../PHP/JS/validate.js"></script>
+<body>
+    <div class="centered">
+        <h1>Thank you for your Interaction</h1><br>
+        <h2>Your data was sucessfully inserted!</h2><br>
+        <a href="../PHP/index.html"><button  class="btn" type="submit" >Go Back Home</button></a>
+        <a href="../PHP/devcard.html"><button class="btn">Meet the Developer!</button></a>
+    </div>
 </body>
 </html>

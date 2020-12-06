@@ -1,26 +1,18 @@
 function ValidateEmail(inputText)
 {
-var mailformat = /^(([^<>()[]\.,;:s@"]+(.[^<>()[]\.,;:s@"]+)*)|(".+"))@(([[0-9]{1,3}.[0-9]{1,3}.[0-9]{1,3}.[0-9]{1,3}])|(([a-zA-Z-0-9]+.)+[a-zA-Z]{2,}))$/;
-if(inputText.value.match(mailformat))
-{
-alert("Your details are Valid!");
-document.appointment.email.focus();
-return true;
+    if (/^[a-zA-Z0-9.!#$%&'+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)$/.test(inputText.value))
+     {
+       return (true)
+     }
+       alert("You have entered an invalid email address!")
+       return (false)
 }
-else
-{
-alert("You have entered an invalid email address!");
-document.appointment.email.focus();
-return false;
-}
-}
+
 function ValidatePhone(inputText1,inputText2)
 {
 var phoneformat = /^\d{10}$/;
 if(inputText1.value.match(phoneformat) && inputText2.value.match(phoneformat))
 {
-    alert("Your details are Valid!");
-    document.form1.to.focus();
     return true;
 }
 else
